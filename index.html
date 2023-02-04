@@ -213,17 +213,17 @@
 <script>
   // get the url parameter named "variation"
   const variation_param = new URLSearchParams(window.location.search);
-  console.log(variation_param);
+//   console.log(variation_param);
   const variation = variation_param.get("variation");
-  console.log(variation);
+//   console.log(variation);
 
   var fileInfo = getFilePath(variation);
-  console.log(fileInfo.files);
+//   console.log(fileInfo.files);
   //   get the base url
   var base_url = window.location.origin;
   // Required static variables and data
-  var filePath = `${base_url}/${fileInfo.path}`;
-  console.log(filePath);
+  var filePath = `${base_url}/announcer/${fileInfo.path}`;
+//   console.log(filePath);
   var files = fileInfo.files;
   var extension = ".wav";
   // var n= 1;
